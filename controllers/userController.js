@@ -1,6 +1,6 @@
 const { Users } = require("../models");
 
-module.exports = {
+const userController = {
   async getAllUsers(req, res) {
     try {
       const users = await Users.find().populate("thoughts");
@@ -110,3 +110,5 @@ module.exports = {
     }
   },
 };
+
+module.exports = userController;

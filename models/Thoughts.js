@@ -5,7 +5,7 @@ const thoughtSchema = new Schema(
   {
     thoughtText: {
       type: String,
-      required: true,
+      required: false,
       maxlength: 280,
       minlength: 1,
     },
@@ -15,7 +15,7 @@ const thoughtSchema = new Schema(
     },
     username: {
       type: String,
-      required: true,
+      required: false,
     },
     reactions: [reactionsSchema],
   },

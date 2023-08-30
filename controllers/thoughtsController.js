@@ -28,7 +28,6 @@ module.exports = {
     try {
       const thought = await Thoughts.create(req.body);
       console.log(req.body);
-      console.log(thought);
       const username = await Users.findOneAndUpdate(
         {
           username: req.body.username,
